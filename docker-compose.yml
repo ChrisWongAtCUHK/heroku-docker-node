@@ -1,0 +1,12 @@
+version: "1"
+services:
+  directus:
+    container_name: node-api-server
+    image: node-api-server:latest
+    ports:
+      - 8080:8080
+    environment:
+      PORT: "8080"
+    
+
+

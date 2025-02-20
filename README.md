@@ -2,7 +2,7 @@
 
 Build docker image
 ```
-docker build -t api-server .
+docker build -t node-api-server .
 ```
 
 在 Heroku 上新增一個 app
@@ -17,4 +17,9 @@ heroku container:login
 heroku stack:set container
 heroku container:push web
 heroku container:release web
+```
+
+Build and run container with `docker-compose.yml`:
+```
+docker compose up --build
 ```
