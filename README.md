@@ -7,8 +7,8 @@ docker build -t node-api-server .
 
 在 Heroku 上新增一個 app
 ```
-heroku create <YOUR_APP_NAME>
-heroku git:remote --app <YOUR_APP_NAME>
+heroku create node-api-server
+heroku git:remote --app node-api-server
 ```
 
 部署到 Heroku
@@ -17,6 +17,10 @@ heroku container:login
 heroku stack:set container
 heroku container:push web
 heroku container:release web
+```
+Open
+```
+heroku open
 ```
 
 Build and run container with `docker-compose.yml`:
